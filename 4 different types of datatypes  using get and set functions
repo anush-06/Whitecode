@@ -1,0 +1,52 @@
+
+// SPDX-License-Identifier: MIT
+pragma solidity >0.8.9;
+
+contract myFunctions{
+    uint public number1;
+    int public number2;
+    bool public value;
+    string public str_value;
+    address public space_address;
+
+    function set_func1(uint _number1 ) public {
+        number1 = _number1;
+        
+    }
+    function get_func1() public view returns(uint) {
+        return number1;
+
+    }
+    function set_func2( int _number2) public {
+        number2 = _number2;
+        
+    }
+    function get_func2() public view returns(int) {
+        return number2;
+
+    }
+    function set_func3( bool _value) public {
+        value = _value;
+        
+    }
+    function get_func3() public view returns(bool ) {
+        return value;
+
+    }
+    function set_func4( string memory _str_value) public {
+        str_value = _str_value;
+        
+    }
+    function get_func4() public view returns(string memory) {
+        return str_value;
+
+    }
+    function set_func5( address _space_address) public {
+        space_address = _space_address;
+        
+    }
+    function get_func5() public view returns(address) {
+        return space_address;
+
+    }
+}
